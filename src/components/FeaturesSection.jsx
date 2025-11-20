@@ -19,9 +19,9 @@ function FeaturesSection() {
         </h2>
 
         {/* Основные возможности */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16" role="list">
           {/* Личный сервер */}
-          <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 card-hover group shadow-lg hover:shadow-glow-orange">
+          <article className="bg-gray-800 rounded-xl p-6 border border-gray-700 card-hover group shadow-lg hover:shadow-glow-orange" role="listitem">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-12 h-12 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:from-orange-500/30 group-hover:to-orange-600/30 transition-all duration-300 shadow-lg shadow-orange-500/20">
                 <svg
@@ -46,10 +46,10 @@ function FeaturesSection() {
               Ваш личный сервер в разных странах с возможностью менять локацию в
               любой момент.
             </p>
-          </div>
+          </article>
 
           {/* Для всех устройств */}
-          <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 card-hover group shadow-lg hover:shadow-glow-orange">
+          <article className="bg-gray-800 rounded-xl p-6 border border-gray-700 card-hover group shadow-lg hover:shadow-glow-orange" role="listitem">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-12 h-12 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:from-orange-500/30 group-hover:to-orange-600/30 transition-all duration-300 shadow-lg shadow-orange-500/20">
                 <svg
@@ -74,11 +74,11 @@ function FeaturesSection() {
               Вы сможете подключаться к серверу со всех ваших устройств
               одновременно, а также поделиться им с семьей и друзьями.
             </p>
-          </div>
+          </article>
 
           {/* Совместимость */}
-          <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 card-hover group shadow-lg hover:shadow-glow-orange">
-            <div className="flex items-center gap-3 mb-3">
+          <article className="bg-gray-800 rounded-xl p-6 border border-gray-700 card-hover group shadow-lg hover:shadow-glow-orange" role="listitem">
+            <div className="flex items-center gap-3 mb-3 min-w-0">
               <div className="w-12 h-12 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:from-orange-500/30 group-hover:to-orange-600/30 transition-all duration-300 shadow-lg shadow-orange-500/20">
                 <svg
                   fill="none"
@@ -94,7 +94,7 @@ function FeaturesSection() {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-white group-hover:text-orange-400 transition-colors">
+              <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-orange-400 transition-colors break-words min-w-0">
                 Совместимость
               </h3>
             </div>
@@ -102,7 +102,7 @@ function FeaturesSection() {
               Подключайтесь на iOS, Android, Windows, macOS. Без сложных
               настроек.
             </p>
-          </div>
+          </article>
         </div>
 
         {/* Метрики */}

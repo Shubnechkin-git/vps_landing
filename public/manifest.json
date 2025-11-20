@@ -1,0 +1,22 @@
+{
+  "name": "Shubnechkin VPS - Личный VPS сервер",
+  "short_name": "Shubnechkin VPS",
+  "description": "Ваш личный VPS сервер без сложной настройки. Безопасное соединение, максимальная скорость, безлимитный трафик.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#F97316",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities", "productivity"],
+  "lang": "ru",
+  "dir": "ltr"
+}
+
