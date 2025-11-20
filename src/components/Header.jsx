@@ -32,7 +32,7 @@ function Header() {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-gray-900/98 backdrop-blur-lg border-b border-gray-700 shadow-xl' 
-        : 'bg-gray-900/95 backdrop-blur-md border-b border-gray-700 shadow-lg'
+        : 'bg-gray-900/98 backdrop-blur-lg border-b border-gray-700 shadow-lg md:bg-gray-900/95 md:backdrop-blur-md'
     }`}>
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
@@ -129,10 +129,12 @@ function Header() {
         </div>
         
         {/* Мобильное меню */}
-        <div className={`md:hidden fixed top-0 left-0 w-full h-screen bg-gray-900/98 backdrop-blur-lg transition-transform duration-300 z-40 ${
+        <div className={`md:hidden fixed top-0 left-0 w-full h-screen bg-gray-900 transition-transform duration-300 z-40 ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
-          <div className="flex flex-col items-center justify-center h-full space-y-8">
+          {/* Затемнение фона */}
+          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+          <div className="relative z-10 flex flex-col items-center justify-center h-full space-y-8">
             <a
               href="#features"
               onClick={(e) => handleSmoothScroll(e, '#features')}
